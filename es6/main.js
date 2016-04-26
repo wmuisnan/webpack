@@ -1,1 +1,1 @@
-const a = 1;
+require('./1-let');
