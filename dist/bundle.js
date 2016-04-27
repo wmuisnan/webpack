@@ -79,6 +79,22 @@
 	// sumrise
 	// 1. block scope
 	// 2. iteration each one is new
+	// 3. 不存在变量提升
+
+	// 不存在变量提升
+
+	console.log(foo); // 输出undefined
+	console.log(bar); // 报错ReferenceError -->没报错
+
+	var foo = 2;
+	var bar = 2;
+
+	var tmp = 123;
+
+	if (true) {
+	  _tmp = 'abc'; // ReferenceError -->没报错
+	  var _tmp = void 0;
+	}
 
 /***/ }
 /******/ ]);
